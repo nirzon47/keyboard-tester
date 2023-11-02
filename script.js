@@ -2,9 +2,16 @@ const curr = document.getElementById('current-key')
 const prev = document.getElementById('last-key')
 const code = document.getElementById('key-code')
 const prompt = document.getElementById('prompt')
+const mute = document.getElementById('mute')
+const keypress = document.getElementById('keypress')
 
 document.addEventListener('keydown', (e) => {
 	e.preventDefault()
+
+	if (mute.checked) {
+		keypress.play()
+	}
+
 	prompt.classList.add('opacity-0')
 	prev.textContent = curr.textContent
 
