@@ -1029,9 +1029,9 @@ html {
   overflow: visible;
 }
 
-.bg-success {
+.bg-success-content {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--su) / var(--tw-bg-opacity));
+  background-color: hsl(var(--suc) / var(--tw-bg-opacity));
 }
 
 .bg-zinc-700 {
@@ -1039,9 +1039,9 @@ html {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.bg-success-content {
+.bg-success {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--suc) / var(--tw-bg-opacity));
+  background-color: hsl(var(--su) / var(--tw-bg-opacity));
 }
 
 .pb-6 {
@@ -1062,10 +1062,6 @@ html {
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .pt-8 {
@@ -1111,6 +1107,11 @@ html {
 .text-secondary {
   --tw-text-opacity: 1;
   color: hsl(var(--s) / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .opacity-0 {

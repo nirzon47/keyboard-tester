@@ -22,10 +22,12 @@ document.addEventListener('keydown', (e) => {
 	) {
 		const key = document.getElementsByClassName(`${e.keyCode}`)
 
-		key[0].classList.add('bg-success-content')
-		key[1].classList.add('bg-success-content')
+		key[0].classList.add('bg-success', 'text-black')
+		key[1].classList.add('bg-success', 'text-black')
 	} else {
-		document.getElementById(`${e.keyCode}`).classList.add('bg-success-content')
+		document
+			.getElementById(`${e.keyCode}`)
+			.classList.add('bg-success', 'text-black')
 	}
 })
 
