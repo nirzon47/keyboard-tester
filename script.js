@@ -28,3 +28,11 @@ document.addEventListener('keydown', (e) => {
 		document.getElementById(`${e.keyCode}`).classList.add('bg-success-content')
 	}
 })
+
+const changeTheme = () => {
+	if (document.documentElement.getAttribute('data-theme') === 'cupcake') {
+		document.documentElement.setAttribute('data-theme', 'dracula')
+	} else {
+		document.documentElement.setAttribute('data-theme', 'cupcake')
+	}
+}

@@ -14,7 +14,11 @@
 	<body class="w-screen h-screen">
 		<!-- Header -->
 		<header>
-			<h1 class="pt-10 pb-6 text-3xl font-bold text-center">Keyboard Tester</h1>
+			<h1 class="pt-10 pb-6 text-3xl font-bold text-center">
+				<span onclick="changeTheme()" class="cursor-pointer"
+					>Keyboard Tester</span
+				>
+			</h1>
 			<h2
 				class="pb-8 text-xl font-semibold text-center animate-bounce"
 				id="prompt"
@@ -244,6 +248,12 @@
 				</tbody>
 			</table>
 		</main>
-		<div class="opacity-0 bg-success-content"></div>
+
+		<footer class="pt-8">
+			<p class="text-xs text-center">
+				Click on the main heading to change theme
+			</p>
+		</footer>
+		<div class="hidden opacity-0 bg-success-content"></div>
 	</body>
 </html>
