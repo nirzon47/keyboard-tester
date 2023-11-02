@@ -16,7 +16,7 @@
 		</header>
 
 		<!-- Keyboard layout -->
-		<section class="flex w-full place-content-center gap-x-20">
+		<section class="flex w-full place-content-center gap-x-20 pb-8">
 			<!-- Left Side -->
 			<section>
 				<!-- First Row -->
@@ -152,5 +152,27 @@
 				</div>
 			</section>
 		</section>
+
+		<!-- Feedback Section -->
+		<main class="grid gap-y-2 place-content-center w-1/2 mx-auto">
+			<table>
+				<tr>
+					<td class="text-right text-xl font-semibold">
+						Your last to last key press was
+					</td>
+					<td id="last-key" class="w-36 text-secondary font-bold pl-8"></td>
+				</tr>
+				<tr>
+					<td class="text-right text-xl font-semibold">
+						Your last key press was
+					</td>
+					<td id="current-key" class="w-36 text-secondary font-bold pl-8"></td>
+				</tr>
+				<tr>
+					<td class="text-right text-xl font-semibold">Key code</td>
+					<td id="key-code" class="w-36 text-secondary font-bold pl-8"></td>
+				</tr>
+			</table>
+		</main>
 	</body>
 </html>
