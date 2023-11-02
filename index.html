@@ -7,148 +7,201 @@
 
 		<!-- Tailwind -->
 		<link rel="stylesheet" href="styles/output.css" />
+
+		<!-- Script -->
+		<script src="script.js" defer></script>
 	</head>
 	<body class="w-screen h-screen">
 		<!-- Header -->
 		<header>
 			<h1 class="text-center text-3xl font-bold pt-10 pb-6">Keyboard Tester</h1>
-			<h2 class="text-center text-xl font-semibold pb-8">Press any key</h2>
+			<h2
+				class="text-center text-xl font-semibold pb-8 animate-bounce"
+				id="prompt"
+			>
+				Press any key
+			</h2>
 		</header>
 
 		<!-- Keyboard layout -->
-		<section class="flex w-full place-content-center gap-x-20 pb-8">
+		<section class="flex w-full place-content-center gap-x-4 pb-8">
 			<!-- Left Side -->
 			<section>
 				<!-- First Row -->
 				<div class="mb-1">
-					<kbd class="flat-key">Esc</kbd>
-					<kbd class="flat-key">F1</kbd>
-					<kbd class="flat-key">F2</kbd>
-					<kbd class="flat-key">F3</kbd>
-					<kbd class="flat-key">F4</kbd>
-					<kbd class="flat-key">F5</kbd>
-					<kbd class="flat-key">F6</kbd>
-					<kbd class="flat-key">F7</kbd>
-					<kbd class="flat-key">F8</kbd>
-					<kbd class="flat-key">F9</kbd>
-					<kbd class="flat-key">F10</kbd>
-					<kbd class="flat-key">F11</kbd>
-					<kbd class="flat-key">F12</kbd>
+					<kbd class="flat-key" id="27">Esc</kbd>
+					<kbd class="flat-key" id="112">F1</kbd>
+					<kbd class="flat-key" id="113">F2</kbd>
+					<kbd class="flat-key" id="114">F3</kbd>
+					<kbd class="flat-key" id="115">F4</kbd>
+					<kbd class="flat-key" id="116">F5</kbd>
+					<kbd class="flat-key" id="117">F6</kbd>
+					<kbd class="flat-key" id="118">F7</kbd>
+					<kbd class="flat-key" id="119">F8</kbd>
+					<kbd class="flat-key" id="120">F9</kbd>
+					<kbd class="flat-key" id="121">F10</kbd>
+					<kbd class="flat-key" id="122">F11</kbd>
+					<kbd class="flat-key" id="123">F12</kbd>
 				</div>
 
 				<!-- Second Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-10">`</kbd>
-					<kbd class="sq-key">1</kbd>
-					<kbd class="sq-key">2</kbd>
-					<kbd class="sq-key">3</kbd>
-					<kbd class="sq-key">4</kbd>
-					<kbd class="sq-key">5</kbd>
-					<kbd class="sq-key">6</kbd>
-					<kbd class="sq-key">7</kbd>
-					<kbd class="sq-key">8</kbd>
-					<kbd class="sq-key">9</kbd>
-					<kbd class="sq-key">0</kbd>
-					<kbd class="sq-key">-</kbd>
-					<kbd class="sq-key">=</kbd>
-					<kbd class="sq-key w-24">Backspace</kbd>
+					<kbd class="sq-key w-10" id="192">`</kbd>
+					<kbd class="sq-key" id="49">1</kbd>
+					<kbd class="sq-key" id="50">2</kbd>
+					<kbd class="sq-key" id="51">3</kbd>
+					<kbd class="sq-key" id="52">4</kbd>
+					<kbd class="sq-key" id="53">5</kbd>
+					<kbd class="sq-key" id="54">6</kbd>
+					<kbd class="sq-key" id="55">7</kbd>
+					<kbd class="sq-key" id="56">8</kbd>
+					<kbd class="sq-key" id="57">9</kbd>
+					<kbd class="sq-key" id="48">0</kbd>
+					<kbd class="sq-key" id="189">-</kbd>
+					<kbd class="sq-key" id="187">=</kbd>
+					<kbd class="sq-key w-24" id="8">Backspace</kbd>
 				</div>
 
 				<!-- Third Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-20">Tab</kbd>
-					<kbd class="sq-key">Q</kbd>
-					<kbd class="sq-key">W</kbd>
-					<kbd class="sq-key">E</kbd>
-					<kbd class="sq-key">R</kbd>
-					<kbd class="sq-key">T</kbd>
-					<kbd class="sq-key">Y</kbd>
-					<kbd class="sq-key">U</kbd>
-					<kbd class="sq-key">I</kbd>
-					<kbd class="sq-key">O</kbd>
-					<kbd class="sq-key">P</kbd>
-					<kbd class="sq-key">[</kbd>
-					<kbd class="sq-key">]</kbd>
-					<kbd class="sq-key">\</kbd>
+					<kbd class="sq-key w-20" id="9">Tab</kbd>
+					<kbd class="sq-key" id="81">Q</kbd>
+					<kbd class="sq-key" id="87">W</kbd>
+					<kbd class="sq-key" id="69">E</kbd>
+					<kbd class="sq-key" id="82">R</kbd>
+					<kbd class="sq-key" id="84">T</kbd>
+					<kbd class="sq-key" id="89">Y</kbd>
+					<kbd class="sq-key" id="85">U</kbd>
+					<kbd class="sq-key" id="73">I</kbd>
+					<kbd class="sq-key" id="79">O</kbd>
+					<kbd class="sq-key" id="80">P</kbd>
+					<kbd class="sq-key" id="219">[</kbd>
+					<kbd class="sq-key" id="221">]</kbd>
+					<kbd class="sq-key" id="220">\</kbd>
 				</div>
 
 				<!-- Fourth Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-24">CapsLk</kbd>
-					<kbd class="sq-key">A</kbd>
-					<kbd class="sq-key">S</kbd>
-					<kbd class="sq-key">D</kbd>
-					<kbd class="sq-key">F</kbd>
-					<kbd class="sq-key">G</kbd>
-					<kbd class="sq-key">H</kbd>
-					<kbd class="sq-key">J</kbd>
-					<kbd class="sq-key">K</kbd>
-					<kbd class="sq-key">L</kbd>
-					<kbd class="sq-key">;</kbd>
-					<kbd class="sq-key">'</kbd>
-					<kbd class="sq-key w-[6.25rem]">Enter</kbd>
+					<kbd class="sq-key w-24" id="20">CapsLk</kbd>
+					<kbd class="sq-key" id="65">A</kbd>
+					<kbd class="sq-key" id="83">S</kbd>
+					<kbd class="sq-key" id="68">D</kbd>
+					<kbd class="sq-key" id="70">F</kbd>
+					<kbd class="sq-key" id="71">G</kbd>
+					<kbd class="sq-key" id="72">H</kbd>
+					<kbd class="sq-key" id="74">J</kbd>
+					<kbd class="sq-key" id="75">K</kbd>
+					<kbd class="sq-key" id="76">L</kbd>
+					<kbd class="sq-key" id="186">;</kbd>
+					<kbd class="sq-key" id="222">'</kbd>
+					<kbd class="sq-key w-[6.25rem] 13" id="13">Enter</kbd>
 				</div>
 
 				<!-- Fifth Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-28">Shift</kbd>
-					<kbd class="sq-key">Z</kbd>
-					<kbd class="sq-key">X</kbd>
-					<kbd class="sq-key">C</kbd>
-					<kbd class="sq-key">V</kbd>
-					<kbd class="sq-key">B</kbd>
-					<kbd class="sq-key">N</kbd>
-					<kbd class="sq-key">M</kbd>
-					<kbd class="sq-key">,</kbd>
-					<kbd class="sq-key">.</kbd>
-					<kbd class="sq-key">/</kbd>
-					<kbd class="sq-key w-36">Shift</kbd>
+					<kbd class="sq-key w-28 16" id="16">Shift</kbd>
+					<kbd class="sq-key" id="90">Z</kbd>
+					<kbd class="sq-key" id="88">X</kbd>
+					<kbd class="sq-key" id="67">C</kbd>
+					<kbd class="sq-key" id="86">V</kbd>
+					<kbd class="sq-key" id="66">B</kbd>
+					<kbd class="sq-key" id="78">N</kbd>
+					<kbd class="sq-key" id="77">M</kbd>
+					<kbd class="sq-key" id="188">,</kbd>
+					<kbd class="sq-key" id="190">.</kbd>
+					<kbd class="sq-key" id="191">/</kbd>
+					<kbd class="sq-key w-36 16" id="16">Shift</kbd>
 				</div>
 
 				<!-- Sixth Row -->
 				<div class="mb-1">
-					<kbd class="sq-key">Ctrl</kbd>
-					<kbd class="sq-key">Fn</kbd>
-					<kbd class="sq-key">Win</kbd>
-					<kbd class="sq-key">Alt</kbd>
-					<kbd class="sq-key w-80">Space</kbd>
-					<kbd class="sq-key">Alt</kbd>
-					<kbd class="sq-key">Ctrl</kbd>
-					<kbd class="sq-key text-center">←</kbd>
-					<div class="inline-block text-center">
-						<div class="grid">
-							<kbd class="sq-key h-7">↑</kbd>
-							<kbd class="sq-key h-7">↓</kbd>
-						</div>
-					</div>
-					<kbd class="sq-key">→</kbd>
+					<kbd class="sq-key 17" id="17">Ctrl</kbd>
+					<kbd class="sq-key bg-zinc-700">Fn</kbd>
+					<kbd class="sq-key" id="91">Win</kbd>
+					<kbd class="sq-key 18" id="18">Alt</kbd>
+					<kbd class="sq-key w-[31.3rem]" id="32">Space</kbd>
+					<kbd class="sq-key 18" id="18">Alt</kbd>
+					<kbd class="sq-key 17" id="17">Ctrl</kbd>
 				</div>
 			</section>
-			<section class="h-full my-auto">
+
+			<!-- Middle Side -->
+			<section class="flex flex-col justify-between">
+				<div>
+					<!-- First Row -->
+					<div class="mb-1">
+						<kbd class="sq-key" id="16">PrtSc</kbd>
+						<kbd class="sq-key" id="17">ScLk</kbd>
+						<kbd class="sq-key" id="32">Pause</kbd>
+					</div>
+
+					<!-- Second Row -->
+					<div class="mb-1">
+						<kbd class="sq-key" id="45">Ins</kbd>
+						<kbd class="sq-key" id="46">Home</kbd>
+						<kbd class="sq-key" id="33">PgUp</kbd>
+					</div>
+
+					<!-- Third Row -->
+					<div class="mb-1">
+						<kbd class="sq-key" id="8">Del</kbd>
+						<kbd class="sq-key" id="35">End</kbd>
+						<kbd class="sq-key" id="34">PgDn</kbd>
+					</div>
+				</div>
+
+				<div>
+					<!-- Fourth Row -->
+					<div class="mb-1 flex w-full justify-center">
+						<kbd class="sq-key text-center" id="38">↑</kbd>
+					</div>
+
+					<!-- Fifth Row -->
+					<div class="mb-1">
+						<kbd class="sq-key" id="37">←</kbd>
+						<kbd class="sq-key text-center" id="40">↓</kbd>
+						<kbd class="sq-key text-right" id="39">→</kbd>
+					</div>
+				</div>
+			</section>
+
+			<!-- Right Side -->
+			<section>
 				<!-- First Row -->
 				<div class="mb-1">
-					<kbd class="sq-key">PrtSc</kbd>
-					<kbd class="sq-key">ScLk</kbd>
-					<kbd class="sq-key">Pause</kbd>
+					<kbd class="sq-key" id="144">NmLk</kbd>
+					<kbd class="sq-key" id="111">/</kbd>
+					<kbd class="sq-key" id="106">*</kbd>
+					<kbd class="sq-key" id="109">-</kbd>
 				</div>
 
 				<!-- Second Row -->
-				<div class="mb-1">
-					<kbd class="sq-key">Ins</kbd>
-					<kbd class="sq-key">Home</kbd>
-					<kbd class="sq-key">PgUp</kbd>
+				<div class="mb-1 h-14 overflow-visible">
+					<kbd class="sq-key" id="103">7</kbd>
+					<kbd class="sq-key" id="104">8</kbd>
+					<kbd class="sq-key" id="105">9</kbd>
+					<kbd class="sq-key h-[7.2rem]" id="107">+</kbd>
 				</div>
 
 				<!-- Third Row -->
 				<div class="mb-1">
-					<kbd class="sq-key">Del</kbd>
-					<kbd class="sq-key">End</kbd>
-					<kbd class="sq-key">PgDn</kbd>
+					<kbd class="sq-key" id="100">4</kbd>
+					<kbd class="sq-key" id="101">5</kbd>
+					<kbd class="sq-key" id="102">6</kbd>
 				</div>
 
 				<!-- Fourth Row -->
-				<div class="mb-1 flex">
-					<kbd class="sq-key mx-auto">NmLk</kbd>
+				<div class="mb-1 h-14 overflow-visible">
+					<kbd class="sq-key" id="97">1</kbd>
+					<kbd class="sq-key" id="98">2</kbd>
+					<kbd class="sq-key" id="99">3</kbd>
+					<kbd class="sq-key h-[7.2rem] 13" id="13">Enter</kbd>
+				</div>
+
+				<!-- Fifth Row -->
+				<div class="mb-1">
+					<kbd class="sq-key w-[7.2rem]" id="96">0</kbd>
+					<kbd class="sq-key" id="110">.</kbd>
 				</div>
 			</section>
 		</section>
@@ -161,7 +214,10 @@
 						<td class="text-right text-xl font-semibold pr-4 w-80">
 							Your last key press was
 						</td>
-						<td id="current-key" class="w-80 text-secondary font-bold pl-4">
+						<td
+							id="current-key"
+							class="w-80 text-secondary font-bold pl-4 text-2xl"
+						>
 							---
 						</td>
 					</tr>
@@ -169,18 +225,25 @@
 						<td class="text-right text-xl font-semibold pr-4 w-80">
 							Your second last key press was
 						</td>
-						<td id="last-key" class="w-80 text-secondary font-bold pl-4">
+						<td
+							id="last-key"
+							class="w-80 text-secondary font-bold pl-4 text-2xl"
+						>
 							---
 						</td>
 					</tr>
 					<tr>
 						<td class="text-right text-xl font-semibold pr-4 w-80">Key code</td>
-						<td id="key-code" class="w-80 text-secondary font-bold pl-4">
+						<td
+							id="key-code"
+							class="w-80 text-secondary font-bold pl-4 text-2xl"
+						>
 							---
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</main>
+		<div class="opacity-0"></div>
 	</body>
 </html>
