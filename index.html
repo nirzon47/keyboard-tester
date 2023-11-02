@@ -14,9 +14,9 @@
 	<body class="w-screen h-screen">
 		<!-- Header -->
 		<header>
-			<h1 class="text-center text-3xl font-bold pt-10 pb-6">Keyboard Tester</h1>
+			<h1 class="pt-10 pb-6 text-3xl font-bold text-center">Keyboard Tester</h1>
 			<h2
-				class="text-center text-xl font-semibold pb-8 animate-bounce"
+				class="pb-8 text-xl font-semibold text-center animate-bounce"
 				id="prompt"
 			>
 				Press any key
@@ -24,7 +24,7 @@
 		</header>
 
 		<!-- Keyboard layout -->
-		<section class="flex w-full place-content-center gap-x-4 pb-8">
+		<section class="flex w-full pb-8 place-content-center gap-x-4">
 			<!-- Left Side -->
 			<section>
 				<!-- First Row -->
@@ -46,7 +46,7 @@
 
 				<!-- Second Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-10" id="192">`</kbd>
+					<kbd class="w-10 sq-key" id="192">`</kbd>
 					<kbd class="sq-key" id="49">1</kbd>
 					<kbd class="sq-key" id="50">2</kbd>
 					<kbd class="sq-key" id="51">3</kbd>
@@ -59,12 +59,12 @@
 					<kbd class="sq-key" id="48">0</kbd>
 					<kbd class="sq-key" id="189">-</kbd>
 					<kbd class="sq-key" id="187">=</kbd>
-					<kbd class="sq-key w-24" id="8">Backspace</kbd>
+					<kbd class="w-24 sq-key" id="8">Backspace</kbd>
 				</div>
 
 				<!-- Third Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-20" id="9">Tab</kbd>
+					<kbd class="w-20 sq-key" id="9">Tab</kbd>
 					<kbd class="sq-key" id="81">Q</kbd>
 					<kbd class="sq-key" id="87">W</kbd>
 					<kbd class="sq-key" id="69">E</kbd>
@@ -82,7 +82,7 @@
 
 				<!-- Fourth Row -->
 				<div class="mb-1">
-					<kbd class="sq-key w-24" id="20">CapsLk</kbd>
+					<kbd class="w-24 sq-key" id="20">CapsLk</kbd>
 					<kbd class="sq-key" id="65">A</kbd>
 					<kbd class="sq-key" id="83">S</kbd>
 					<kbd class="sq-key" id="68">D</kbd>
@@ -152,15 +152,15 @@
 
 				<div>
 					<!-- Fourth Row -->
-					<div class="mb-1 flex w-full justify-center">
-						<kbd class="sq-key text-center" id="38">↑</kbd>
+					<div class="flex justify-center w-full mb-1">
+						<kbd class="text-center sq-key" id="38">↑</kbd>
 					</div>
 
 					<!-- Fifth Row -->
 					<div class="mb-1">
 						<kbd class="sq-key" id="37">←</kbd>
-						<kbd class="sq-key text-center" id="40">↓</kbd>
-						<kbd class="sq-key text-right" id="39">→</kbd>
+						<kbd class="text-center sq-key" id="40">↓</kbd>
+						<kbd class="text-right sq-key" id="39">→</kbd>
 					</div>
 				</div>
 			</section>
@@ -176,7 +176,7 @@
 				</div>
 
 				<!-- Second Row -->
-				<div class="mb-1 h-14 overflow-visible">
+				<div class="mb-1 overflow-visible h-14">
 					<kbd class="sq-key" id="103">7</kbd>
 					<kbd class="sq-key" id="104">8</kbd>
 					<kbd class="sq-key" id="105">9</kbd>
@@ -191,7 +191,7 @@
 				</div>
 
 				<!-- Fourth Row -->
-				<div class="mb-1 h-14 overflow-visible">
+				<div class="mb-1 overflow-visible h-14">
 					<kbd class="sq-key" id="97">1</kbd>
 					<kbd class="sq-key" id="98">2</kbd>
 					<kbd class="sq-key" id="99">3</kbd>
@@ -211,32 +211,32 @@
 			<table class="grid place-content-center">
 				<tbody class="grid gap-y-2">
 					<tr>
-						<td class="text-right text-xl font-semibold pr-4 w-80">
+						<td class="pr-4 text-xl font-semibold text-right w-80">
 							Your last key press was
 						</td>
 						<td
 							id="current-key"
-							class="w-80 text-secondary font-bold pl-4 text-2xl"
+							class="pl-4 text-2xl font-bold w-80 text-secondary"
 						>
 							---
 						</td>
 					</tr>
 					<tr>
-						<td class="text-right text-xl font-semibold pr-4 w-80">
+						<td class="pr-4 text-xl font-semibold text-right w-80">
 							Your second last key press was
 						</td>
 						<td
 							id="last-key"
-							class="w-80 text-secondary font-bold pl-4 text-2xl"
+							class="pl-4 text-2xl font-bold w-80 text-secondary"
 						>
 							---
 						</td>
 					</tr>
 					<tr>
-						<td class="text-right text-xl font-semibold pr-4 w-80">Key code</td>
+						<td class="pr-4 text-xl font-semibold text-right w-80">Key code</td>
 						<td
 							id="key-code"
-							class="w-80 text-secondary font-bold pl-4 text-2xl"
+							class="pl-4 text-2xl font-bold w-80 text-secondary"
 						>
 							---
 						</td>
@@ -244,6 +244,6 @@
 				</tbody>
 			</table>
 		</main>
-		<div class="opacity-0"></div>
+		<div class="opacity-0 bg-success-content"></div>
 	</body>
 </html>

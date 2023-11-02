@@ -993,9 +993,19 @@ html {
   overflow: visible;
 }
 
+.bg-success {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--su) / var(--tw-bg-opacity));
+}
+
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-success-content {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--suc) / var(--tw-bg-opacity));
 }
 
 .pb-6 {
