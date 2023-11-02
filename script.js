@@ -4,6 +4,9 @@ const code = document.getElementById('key-code')
 const prompt = document.getElementById('prompt')
 const mute = document.getElementById('mute')
 const keypress = document.getElementById('keypress')
+const heading = document.getElementById('heading')
+
+heading.addEventListener('click', () => changeTheme())
 
 document.addEventListener('keydown', (e) => {
 	e.preventDefault()
