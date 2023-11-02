@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="dracula">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
 	<body class="w-screen h-screen">
 		<!-- Header -->
 		<header>
-			<h1 class="text-center text-3xl font-bold py-6">Keyboard Tester</h1>
+			<h1 class="text-center text-3xl font-bold pt-10 pb-6">Keyboard Tester</h1>
 			<h2 class="text-center text-xl font-semibold pb-8">Press any key</h2>
 		</header>
 
@@ -154,24 +154,32 @@
 		</section>
 
 		<!-- Feedback Section -->
-		<main class="grid gap-y-2 place-content-center w-1/2 mx-auto">
-			<table>
-				<tr>
-					<td class="text-right text-xl font-semibold">
-						Your last to last key press was
-					</td>
-					<td id="last-key" class="w-36 text-secondary font-bold pl-8"></td>
-				</tr>
-				<tr>
-					<td class="text-right text-xl font-semibold">
-						Your last key press was
-					</td>
-					<td id="current-key" class="w-36 text-secondary font-bold pl-8"></td>
-				</tr>
-				<tr>
-					<td class="text-right text-xl font-semibold">Key code</td>
-					<td id="key-code" class="w-36 text-secondary font-bold pl-8"></td>
-				</tr>
+		<main>
+			<table class="grid place-content-center">
+				<tbody class="grid gap-y-2">
+					<tr>
+						<td class="text-right text-xl font-semibold pr-4 w-80">
+							Your last key press was
+						</td>
+						<td id="current-key" class="w-80 text-secondary font-bold pl-4">
+							---
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right text-xl font-semibold pr-4 w-80">
+							Your second last key press was
+						</td>
+						<td id="last-key" class="w-80 text-secondary font-bold pl-4">
+							---
+						</td>
+					</tr>
+					<tr>
+						<td class="text-right text-xl font-semibold pr-4 w-80">Key code</td>
+						<td id="key-code" class="w-80 text-secondary font-bold pl-4">
+							---
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</main>
 	</body>
