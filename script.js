@@ -4,6 +4,7 @@ const code = document.getElementById('key-code')
 const prompt = document.getElementById('prompt')
 
 document.addEventListener('keydown', (e) => {
+	e.preventDefault()
 	prompt.classList.add('opacity-0')
 	prev.textContent = curr.textContent
 
