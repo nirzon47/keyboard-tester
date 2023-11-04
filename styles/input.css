@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-	.sq-key {
-		@apply w-14 h-14 border rounded inline-block hover:bg-secondary-focus cursor-pointer duration-200 p-1;
-	}
-	.flat-key {
-		@apply w-[3.9rem] h-8 border rounded inline-block hover:bg-secondary-focus cursor-pointer duration-200 p-0.5;
-	}
-}
